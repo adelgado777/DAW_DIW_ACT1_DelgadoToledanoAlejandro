@@ -1,0 +1,45 @@
+/* Mithril & Co. - ajustes mínimos sobre Bootstrap 5.3 */
+:root {
+  --oro: #c9a24b;
+  --oro-claro: #e9cf85;
+  --bosque: #17221b;
+  --bosque-2: #1f2e25;
+  --mithril: #d3dade;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body { padding-top: 72px; font-family: "EB Garamond", Georgia, serif; font-size: 1.15rem; background-color: var(--bosque); }
+h1, h2, h3, h4, .navbar-brand, .btn { font-family: "Cinzel", Georgia, serif; }
+h1, h2 { letter-spacing: .02em; }
+
+.bg-bosque { background-color: var(--bosque-2); }
+.text-oro { color: var(--oro-claro); }
+.border-oro { border-color: var(--oro) !important; }
+
+.btn-oro { --bs-btn-color: #1a1408; --bs-btn-bg: var(--oro); --bs-btn-border-color: var(--oro);
+  --bs-btn-hover-color: #1a1408; --bs-btn-hover-bg: var(--oro-claro); --bs-btn-hover-border-color: var(--oro-claro);
+  --bs-btn-active-bg: var(--oro-claro); --bs-btn-active-border-color: var(--oro-claro); font-weight: 700; }
+.btn-outline-oro { --bs-btn-color: var(--oro-claro); --bs-btn-border-color: var(--oro);
+  --bs-btn-hover-color: #1a1408; --bs-btn-hover-bg: var(--oro); --bs-btn-hover-border-color: var(--oro);
+  --bs-btn-active-bg: var(--oro-claro); --bs-btn-active-color: #1a1408; font-weight: 700; }
+
+.navbar { background-color: rgba(15, 22, 17, .96); border-bottom: 1px solid var(--oro); }
+.navbar .nav-link { color: var(--mithril); }
+.navbar .nav-link:hover, .navbar .nav-link:focus { color: var(--oro-claro); }
+
+.hero { background: radial-gradient(circle at 70% 40%, #2a4030 0%, var(--bosque) 65%); min-height: 80vh; }
+.hero .lead { max-width: 34rem; }
+
+.card { background-color: var(--bosque-2); transition: transform .2s ease; }
+.card:hover { transform: translateY(-4px); }
+.card-img-top { aspect-ratio: 4 / 3; object-fit: cover; }
+
+.sticky-offset { top: 92px; }
+.table > :not(caption) > * > * { background-color: transparent; }
+.plan-destacado { background-color: rgba(201, 162, 75, .12) !important; }
+
+.accordion { --bs-accordion-bg: var(--bosque-2); --bs-accordion-active-bg: #2a3d31; --bs-accordion-active-color: var(--oro-claro); }
+.accordion-button { font-family: "Cinzel", Georgia, serif; }
+
+:focus-visible { outline: 3px solid var(--oro-claro); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .card { transition: none; } }
